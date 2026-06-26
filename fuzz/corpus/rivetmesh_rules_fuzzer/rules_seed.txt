@@ -1,0 +1,7 @@
+let max_cost = 4 + 8 * 2;
+grid {
+  let penalty = weighted(max_cost, 3);
+  lane {
+    let label = "primary";
+  }
+}

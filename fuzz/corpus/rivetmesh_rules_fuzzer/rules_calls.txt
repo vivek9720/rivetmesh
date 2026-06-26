@@ -1,0 +1,5 @@
+let root = choose(1, 2, 3);
+region {
+  let price = (root + 9) / 2;
+  let name = "north";
+}

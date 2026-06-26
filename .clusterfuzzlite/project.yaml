@@ -1,0 +1,3 @@
+fuzz_targets:
+  - rivetmesh_bundle_fuzzer
+  - rivetmesh_rules_fuzzer

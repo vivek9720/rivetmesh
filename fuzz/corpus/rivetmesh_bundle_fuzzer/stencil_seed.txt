@@ -1,0 +1,10 @@
+RIVETMESH/1
+version 1
+meta producer=seed
+section patches stencil
+STN2
+tile id=tile-3 rev=1
+patch id=p0 layer=base x=0 y=0 w=4 h=1 data="ABCD"
+patch id=p1 layer=mask x=1 y=1 w=2 h=1 data="~1:Z"
+.
+end

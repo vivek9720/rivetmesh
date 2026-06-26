@@ -1,0 +1,31 @@
+RIVETMESH/1
+version 1
+meta producer=seed
+meta region=offline-grid
+section policy rules
+let max_cost = 12 + 3 * 4;
+tile {
+  let speed = weighted(max_cost, 2);
+}
+.
+section records table
+TBL2
+schema id:int name:text active:flag score:decimal
+row id=1 name="alpha" active=true score=7.5
+row id=2 name="beta" active=false score=4.25
+.
+section graph route
+RTE2
+node 1 0.0 0.0 depot
+node 2 1.0 0.0 relay
+node 3 2.0 1.0 edge
+edge 1 2 3.5 1
+edge 2 3 4.0 2
+.
+section patches stencil
+STN2
+tile id=tile-17 rev=3
+patch id=base layer=roads x=0 y=0 w=2 h=2 data="abcd"
+patch id=mask layer=land x=2 y=1 w=1 h=1 data="\x41~1:B"
+.
+end
